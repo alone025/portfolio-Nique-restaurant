@@ -187,7 +187,7 @@ header .content-header .picture-header-content img {
 .menu .logo-menu h2,
 .cook .logo-cook h2 {
   text-align: center;
-  font-size: 4em;
+  font-size: 6em;
   color: rgb(213, 147, 61);
 }
 .menu .logo-menu h2 box-icon,
@@ -272,7 +272,7 @@ header .content-header .picture-header-content img {
 }
 .about .logo-section h2 {
   text-align: center;
-  font-size: 4em;
+  font-size: 6.5em;
   color: rgb(176, 15, 125);
 }
 .about .content-section {
@@ -311,7 +311,7 @@ footer .thing- .logo-foo img {
 }
 .contact .logo-contact {
   text-align: center;
-  font-size: 3em;
+  font-size: 5em;
   color: rgb(187, 0, 255);
 }
 .contact .content-contact {
