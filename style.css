@@ -331,6 +331,7 @@ footer .thing- .logo-foo img {
 footer {
   margin-top: 6rem;
   background: linear-gradient(50deg, aqua, darkviolet);
+  padding: 27px;
 }
 
 footer .thing- {
