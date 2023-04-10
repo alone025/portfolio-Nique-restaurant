@@ -15,11 +15,17 @@ body.dark {
   background: #0e0e0e;
   --bg-color: linear-gradient(45deg, black, lavender);
 }
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 7rem;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body {
   background-color: #fffefb;
