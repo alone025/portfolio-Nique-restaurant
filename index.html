@@ -5,9 +5,234 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Portfolio1</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <header>
+      <nav>
+        <div class="logo-nav">
+          <span
+            ><img
+              src="https://user-images.githubusercontent.com/127105897/230919543-00ec5c1f-a047-4f58-84b5-665bcb83526f.png"
+              alt=""
+          /></span>
+          The cook
+        </div>
+        <div class="nav-items">
+          <ul>
+            <div id="marker"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#cook">Cook</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <box-icon name='search-alt' color='#94056e' ></box-icon></a>
+            </li>
+            <li>
+              <a href="#"
+                ><box-icon name='cart' type='solid' color='#94056e'></box-icon></a>
+            </li>
+            <li>
+              <a href="#"><div class="bx bx-moon" id="dark" style="    font-size: 23px;
+                color: darkviolet;margin-top: 1px;"></div></a>
+            </li>
+          </ul>
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </nav>
+      <div class="content-header">
+        <div class="logo-content-header">
+          <h1>The cook <span></span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Porro,
+            deleniti!
+          </p>
+          <div class="button-header-content">
+            <a href="#cook"><button type="submit">Cook</button></a>
+            <a href="#menu"><button type="submit">Order</button></a>
+          </div>
+        </div>
+        <div class="picture-header-content">
+          <img
+            src="https://user-images.githubusercontent.com/127105897/230772951-a32ca542-6102-4f7c-b0cc-9f8229cab1dc.png"
+            alt="cooker"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="menu" id="menu">
+      <div class="logo-menu">
+        <h2>
+          Our menu <box-icon type='solid' name='food-menu'></box-icon>
+        </h2>
+      </div>
+      <div class="foods">
+        <div class="meal">
+          <h4>Palov</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img"><img src="https://user-images.githubusercontent.com/127105897/230768672-f1074d43-3e9c-4afa-9d3d-60a5c895a0b0.png" alt=""></div>
+          <h3>30.000 uzs</h3>
+        </div>
+        <div class="meal">
+          <h4>Shurva</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img"><img src="https://user-images.githubusercontent.com/127105897/230768699-39cc1895-163e-47a2-b9f1-4d03dbab2d5c.png" alt=""></div>
+          <h3>18.000 uzs</h3>
+        </div>
+        <div class="meal">
+          <h4>Norin</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img"><img src="https://user-images.githubusercontent.com/127105897/230768740-53d78735-7c21-477e-a3fa-3cd534e624fe.png" alt=""></div>
+          <h3>27.000 uzs</h3>
+        </div>
+        <div class="meal">
+          <h4>Shashlik</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img"><img src="https://user-images.githubusercontent.com/127105897/230768764-47ae94eb-e678-4a62-8f94-03b6c557c0bf.png" alt=""></div>
+          <h3>15.000 uzs</h3>
+        </div>
+        <div class="meal">
+          <h4>Qozon kabob</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img"><img src="https://user-images.githubusercontent.com/127105897/230768796-e7174aaf-bc40-4a52-a35d-8ace07c32f23.png" alt=""></div>
+          <h3>30.000 uzs</h3>
+        </div>
+        <div class="meal">
+          <h4>Somsa</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img">  <img src="https://user-images.githubusercontent.com/127105897/230769396-070329fc-c47e-4ddb-bc3f-c22fe98eaa42.png" alt=""></div>
+          <h3>12.000 uzs</h3>
+        </div>
+        <div class="meal">
+          <h4>Lag'mon</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img"><img src="https://user-images.githubusercontent.com/127105897/230769438-e6fbe129-f3fb-44db-a52e-d426b215dc25.png" alt=""></div>
+          <h3>25.000 uzs</h3>
+        </div>
+        <div class="meal">
+          <h4>Xonim</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="img">
+            <img src="https://user-images.githubusercontent.com/127105897/230769345-8b71c5a4-6afb-4900-ad26-137c5fb09c32.png" alt="">
+          </div>
+          <h3>28.000 uzs</h3>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="cook" id="cook">
+      <div class="logo-cook">
+        <h2>Retseption<box-icon name='notepad'></box-icon></h2>
+      </div>
+      <div class="content-cook">
+        <div class="cook-text">
+          <h3>Palov</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+        <div class="cook-text">
+          <h3>Shurva</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+        <div class="cook-text">
+          <h3>Norin</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+        <div class="cook-text">
+          <h3>Shashlik</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+        <div class="cook-text">
+          <h3>Somsa</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+        <div class="cook-text">
+          <h3>Qozon kabob</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+        <div class="cook-text">
+          <h3>Lagmon</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+        <div class="cook-text">
+          <h3>Xonim</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae hic eaque illum nobis delectus vero nihil repellat ipsa corrupti doloribus, numquam ducimus magni natus maiores nam. Eum odit quia eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis impedit eos velit dicta aspernatur inventore quod maiores dolores quos, dolorum iste illo explicabo sint facere autem possimus non ratione saepe?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quam quasi architecto, libero magnam voluptatibus nesciunt minus sequi corrupti perferendis excepturi deleniti hic itaque, modi aperiam aliquid eum in officia.</p>
+        </div>
+      </div>
+    </div>
+    <section class="about" id="about">
+      <div class="logo-section">
+        <h2>About us</h2>
+      </div>
+      <div class="content-section">
+        <div class="text-section">
+          <h3><span
+            ><img
+              src="https://user-images.githubusercontent.com/127105897/230931381-145e444f-2ec8-4c38-9a7a-7cfab706a3a0.png"
+              alt=""
+          /></span>The cook</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptate nam blanditiis non iste dolorem voluptatum, possimus ullam sit. Quos, necessitatibus unde, veritatis, nostrum corrupti laborum animi harum illo ex dicta sapiente aperiam? Corporis, ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dignissimos a et eius, mollitia dicta quidem. Illo quod natus saepe eligendi quia consequatur, reiciendis cumque molestias tempora laudantium. Voluptas, laudantium. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="img-section">
+          <img src="https://user-images.githubusercontent.com/127105897/230773136-d6543717-bff5-4339-85ec-fc2722799e3c.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="logo-contact">
+        <h2>Contact us</h2>
+      </div>
+      <div class="content-contact">
+        <h3><a href="tel:(99) 405 85-85" class="h1"><div class="bx bx-phone"></div>  <span>  </span>+998(99) 406-85-85</a></h3>
+        <h3><a href="tel:(99) 405 85-85" class="h2"><div class="bx bx-phone" style="color: var(--text1-color);"></div>  <span>  </span>+998(99) 405-85-85</a></h3>
+      </div>
+    </section>
+    <footer>
+      <div class="thing-">
+        <div class="logo-foo">
+          <img
+              src="https://user-images.githubusercontent.com/127105897/230930773-0cba5489-07b2-4d97-a634-6da4acfb68a4.png"
+              alt=""
+          />
+          <h2>The cook</h2>
+        </div>
+        <div class="navigat">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#cook">cook</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+        <div class="links-foo">
+          <li><a href="#"><box-icon name='instagram' type='logo' ></box-icon></a></li>
+          <li><a href="#"><box-icon name='telegram' type='logo' ></box-icon></a></li>
+          <li><a href="#"><box-icon name='facebook' type='logo' ></box-icon></a></li>
+          <li><a href="#"><box-icon type='logo' name='snapchat'></box-icon></a></li>
+        </div>
+      </div>
+      <div class="end">
+        <p>Copyright ©2023-2023 Forestest</p><br>
+        <p>All rights reserved</p>
+      </div>
+    </footer>
+    <script src="java.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
