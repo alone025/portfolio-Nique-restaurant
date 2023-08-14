@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lobster&display=swap");
+
+@font-face {
+  font-family: Bitter Rose;
+  src: url(./Bitter-rose.ttf);
+}
+
+:root {
+  --Chillax: "Chillax", sans-serif;
+  --Rose: Bitter Rose;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Navbar and head */
+
+.head1 {
+  height: 100vh;
+  padding-bottom: 50px;
+  width: 100%;
+  background: url(https://github.com/alone025/img-demos/assets/127105897/7b47fd35-ba0c-493d-8fd8-8e920c80f7ab),
+    #111;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.head1 .logo {
+  text-align: center;
+  padding-top: 35px;
+}
+.head1 .logo h2 {
+  font-family: var(--Chillax);
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+}
+.head1 .text-logo {
+  text-align: center;
+  margin-top: 60px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.head1 .text-logo h2 {
+  font-family: var(--Rose);
+  margin: 0;
+  font-size: 80px;
+  color: #face8d;
+  font-weight: 500;
+  line-height: 95%;
+}
+.head1 .text-logo h1 {
+  font-family: var(--Chillax);
+  margin: 0;
+  font-size: 160px;
+  color: #ffffff;
+  line-height: 85%;
+}
+.head1 .text-logo p {
+  font-size: 24px;
+  width: 606px;
+  font-family: var(--Chillax);
+  color: #ffffff;
+  margin-bottom: 0;
+  line-height: 160%;
+}
+.head1 .open-h {
+  background: azure;
+  width: 250px;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.head1 .open-h .bx {
+  display: none;
+}
+.head1 .open-h p {
+  font-size: 18px;
+  font-family: "Chillax";
+  color: #081212;
+}
+.head1 .open-h .day p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "Chillax";
+}
+.head1 .open-h .day span {
+  color: #081212;
+}
+
+.head1 .navbar,
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 60px;
+  width: max-content;
+  gap: 50px;
+  padding: 12px;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.head1 .navbar .timer,
+.navbar .timer {
+  position: relative;
+}
+.head1 .navbar .timer .bx,
+.navbar .timer .bx {
+  font-size: 25px;
+  margin-left: 15px;
+}
+.head1 .navbar .timer .navigation-timer,
+.navbar .timer .navigation-timer {
+  top: -1000px;
+  left: -7px;
+  transition: 0.3s;
+  position: absolute;
+}
+.head1 .navbar .timer .top,
+.navbar .timer .top {
+  position: absolute;
+  top: -190px;
+  background: aliceblue;
+  left: -7px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 12px;
+  transition: 0.3s;
+  bottom: auto;
+}
+.head1 .navbar .timer .navigation-timer ul,
+.navbar .timer .navigation-timer ul {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  padding: 0;
+}
+.head1 .navbar .timer .navigation-timer ul li,
+.navbar .timer .navigation-timer ul li {
+  list-style: none;
+  font-family: var(--Chillax);
+  cursor: pointer;
+}
+.head1 .navbar .navigation ul,
+.navbar .navigation ul {
+  display: flex;
+  gap: 35px;
+  padding: 0;
+}
+.head1 .navbar .navigation ul li,
+.navbar .navigation ul li {
+  list-style: none;
+  font-family: var(--Chillax);
+}
+.head1 .navbar .book-table button,
+.navbar .book-table button {
+  font-size: 14px;
+  padding: 16px 24px;
+  font-family: "Chillax";
+  border-radius: 60px;
+  border: none;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Media section */
+
+@media screen and (max-width: 1306px) {
+  .head1 .open-h {
+    height: 52px;
+    overflow: hidden;
+    position: absolute;
+    left: 2%;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+  }
+  .head1 .open-h:hover {
+    height: 172px;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 700px) {
+  .head1 .text-logo h2 {
+    font-size: 65px;
+  }
+  .head1 .text-logo h1 {
+    font-size: 130px;
+  }
+  .head1 .text-logo p {
+    font-size: 21px;
+  }
+  .head1 .open-h {
+    height: 46px;
+    position: absolute;
+    left: 1%;
+    top: -45px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .head1 .text-logo h2 {
+    font-size: 60px;
+  }
+  .head1 .text-logo h1 {
+    font-size: 110px;
+  }
+  .head1 .text-logo p {
+    font-size: 19px;
+    width: 430px;
+  }
+  .head1 .navbar,
+  .navbar {
+    gap: 32px;
+    padding: 9px;
+  }
+  .head1 .navbar .book-table button,
+  .navbar .book-table button {
+    padding: 16px 22px;
+  }
+  .head1 .navbar .timer .navigation-timer ul,
+  .navbar .timer .navigation-timer ul {
+    gap: 12px;
+  }
+  .head1 .navbar .timer .navigation-timer ul li,
+  .navbar .timer .navigation-timer ul li {
+    font-size: 14px;
+  }
+  .head1 .navbar .timer .top,
+  .navbar .timer .top {
+    position: absolute;
+    top: -182px;
+  }
+  .head1 .navbar .navigation,
+  .navbar .navigation {
+    scroll-behavior: auto;
+    overflow-x: auto;
+    width: 140px;
+  }
+  .head1 .navbar .navigation::-webkit-scrollbar,
+  .navbar .navigation::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .head1 .open-h {
+    height: 46px;
+    width: 134px;
+  }
+  .head1 .open-h:hover {
+    height: 200px;
+    transition: 0.3s;
+  }
+  .head1 .text-logo p {
+    font-size: 16px;
+    width: 388px;
+  }
+  .head1 .text-logo h1 {
+    font-size: 85px;
+  }
+  .head1 .text-logo h2 {
+    font-size: 50px;
+  }
+  .head1 .navbar .navigation ul li,
+  .navbar .navigation ul li {
+    font-size: 15px;
+  }
+  .head1 .navbar,
+  .navbar {
+    gap: 22px;
+    padding: 4px;
+  }
+  .head1 .navbar .book-table button,
+  .navbar .book-table button {
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .head1 .open-h {
+    height: 25px;
+    width: 44px;
+  }
+  .head1 .open-h:hover {
+    height: 200px;
+    transition: 0.3s;
+    width: 134px;
+  }
+  .head1 .open-h .okl {
+    margin-top: 35px;
+    transition: 0.3s;
+  }
+  .head1 .open-h:hover .okl {
+    margin-top: 18px;
+    transition: 0.3s;
+  }
+  .head1 .open-h .bx {
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    color: #111111c9;
+    transition: 0.3s;
+  }
+  .head1 .open-h:hover .bx {
+    display: none;
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 390px) {
+  .head1 .logo h2 {
+    font-size: 28px;
+  }
+  .head1 .text-logo h2 {
+    font-size: 40px;
+  }
+  .head1 .text-logo h1 {
+    font-size: 70px;
+  }
+  .head1 .text-logo p {
+    font-size: 12px;
+    width: 290px;
+  }
+  .head1 .navbar .book-table button,
+  .navbar .book-table button {
+    padding: 11px 12px;
+    font-size: 12px;
+  }
+  .head1 .navbar .navigation ul li,
+  .navbar .navigation ul li {
+    font-size: 13px;
+    color: #111;
+  }
+  .head1 .navbar .navigation ul,
+  .navbar .navigation ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .head1 .navbar .timer .bx,
+  .navbar .timer .bx {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .head1 .navbar,
+  .navbar {
+    gap: 20px;
+    padding: 5px;
+  }
+  .head1 .navbar .timer .top,
+  .navbar .timer .top {
+    position: absolute;
+    top: -172px;
+    padding: 10px;
+  }
+  .head1 .navbar .timer .navigation-timer ul li,
+  .navbar .timer .navigation-timer ul li {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .head1 .navbar,
+  .navbar {
+    width: 240px;
+    overflow-x: auto;
+    scroll-behavior: auto;
+  }
+  .head1 .navbar .timer,
+  .navbar .timer {
+    position: unset;
+  }
+  .head1 .navbar .timer .top,
+  .navbar .timer .top {
+    position: absolute;
+    top: 203px;
+    padding: 10px;
+    height: 190px;
+  }
+  .head1 .navbar .timer .bx,
+  .navbar .timer .bx {
+    position: relative;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 299px) {
+  .head1 .text-logo p {
+    font-size: 11px;
+    width: 255px;
+  }
+  .head1 .text-logo h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .head1 {
+    height: auto;
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lobster&display=swap");
+
+@font-face {
+  font-family: Bitter Rose;
+  src: url(./Bitter-rose.ttf);
+}
+
+:root {
+  --Chillax: "Chillax", sans-serif;
+  --Rose: Bitter Rose;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.container .top-404 {
+  text-align: center;
+}
+.container .top-404 h2 {
+  color: #000;
+  font-family: var(--Chillax);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.container .top-404 h3 {
+  color: #000;
+  font-family: var(--Chillax);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 0;
+}
+.container .bottom-404,
+.center-404,
+.top-404 {
+  z-index: 111;
+}
+.container .center-404 {
+  width: auto;
+}
+.container .center-404 img {
+  width: 100%;
+}
+.container .bottom-404 button {
+  padding: 14px 22px;
+  border-radius: 30px;
+  border-radius: 30px;
+  border: 3px solid #000;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.container svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

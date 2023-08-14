@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nique [Classes] - Restaurant Website</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- Social links -->
+    <link rel="stylesheet" href="nique-home-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=chillax@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      /* new section */
+
+      .logo {
+        position: fixed;
+        z-index: 11;
+      }
+      .head1 .text-logo {
+        justify-content: unset;
+        align-items: center;
+        margin-top: 0;
+      }
+      .head1 .text-logo h3 {
+        color: var(--text-primary, #face8d);
+        font-family: Bitter Rose;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 70%;
+        margin: 0;
+        margin-top: 160px;
+      }
+      .head1 .text-logo h2 {
+        color: var(--text-default, #fff);
+        text-align: center;
+        font-family: Chillax;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 40px */
+      }
+      .head1 .text-logo p {
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        font-family: Chillax;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+      .head1 .navbar,
+      .navbar {
+        position: fixed;
+        top: 315px;
+        z-index: 11111;
+      }
+      /* background imgs */
+      .swi1 {
+        background: url(./img/andrey-ilkevich-FKoO1st4xoU-unsplash\ 1.png) black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .swi2 {
+        background: url(./img/mae-mu-I7A_pHLcQK8-unsplash\ 1.png) black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .swi3 {
+        background: url(./img/monika-grabkowska-xr55g7_0kQ4-unsplash\ 1.png)
+          black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .swi4 {
+        background: url(./img/roberta-sorge-kp9UVn-PUac-unsplash\ 1.png) black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .swi5 {
+        background: url(./img/chad-montano-eeqbbemH9-c-unsplash\ 1.png) black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Media section (no planed) */
+
+      @media screen and (max-width: 320px) {
+        .head1 .navbar,
+        .navbar {
+          width: 240px;
+          overflow-x: unset;
+          scroll-behavior: auto;
+        }
+        .head1 .navbar .timer .top,
+        .navbar .timer .top {
+          position: absolute;
+          top: -144px;
+          padding: 10px;
+          height: 190px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="head1 swiper mySwiper">
+      <div class="logo">
+        <h2 class="home-nique">nique.</h2>
+      </div>
+      <nav class="navbar">
+        <div class="timer">
+          <div class="bx bx-time logo-timer"></div>
+          <div class="navigation-timer after-hover">
+            <ul>
+              <li class="contact-n">Contact</li>
+              <li class="erore">Spot</li>
+              <li class="erore">Shop</li>
+              <li class="erore">Blog</li>
+            </ul>
+          </div>
+        </div>
+        <div class="navigation">
+          <ul>
+            <li class="menu">Menu</li>
+            <li class="restaurant">Restaurant</li>
+            <li class="class">Classes</li>
+          </ul>
+        </div>
+        <div class="book-table">
+          <button type="submit" class="navi-book">Book Table</button>
+        </div>
+      </nav>
+      <div class="swiper-wrapper">
+        <div class="text-logo swiper-slide swi1">
+          <h3>Breakfast</h3>
+          <h2>Coffee Time</h2>
+          <p>March 17, 2023</p>
+        </div>
+        <div class="text-logo swiper-slide swi2">
+          <h3>Vegan</h3>
+          <h2>Vegan Burger</h2>
+          <p>January 10, 2023</p>
+        </div>
+        <div class="text-logo swiper-slide swi3">
+          <h3>Italian</h3>
+          <h2>Salad Style</h2>
+          <p>November 19, 2022</p>
+        </div>
+        <div class="text-logo swiper-slide swi4">
+          <h3>Italian</h3>
+          <h2>Homemade Honey</h2>
+          <p>October 8, 2022</p>
+        </div>
+        <div class="text-logo swiper-slide swi5">
+          <h3>Asian</h3>
+          <h2>Delicious Breakfast</h2>
+          <p>June 16, 2023</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script src="nique-xsfa-res.js"></script>
+  </body>
+</html>
